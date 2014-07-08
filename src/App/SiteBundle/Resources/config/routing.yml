@@ -1,0 +1,56 @@
+home:
+    pattern:  /
+    defaults: { _controller: AppSiteBundle:Default:index }
+
+quienes_somos:
+    pattern:  /nosotros
+    defaults: { _controller: AppSiteBundle:Default:nosotros}
+
+
+
+ver_producto:
+    path:      /producto/{slug}
+    defaults:  { _controller: AppSiteBundle:Default:producto }
+
+
+ver_categoria:
+    path:      /categoria/{slug}
+    defaults:  { _controller: AppSiteBundle:Default:categoria }
+
+
+contactenos:
+    path:      /contactenos
+    defaults:  { _controller: AppSiteBundle:Default:contactenos }
+
+
+comentar:
+    path:      /comentar
+    defaults:  { _controller: AppSiteBundle:Default:comentar }
+
+help:
+    path:      /generar_slug
+    defaults:  { _controller: AppSiteBundle:Default:generar_slug }
+
+
+
+
+
+
+# seguridad
+
+register:
+    path:      /registrar
+    defaults:  { _controller: AppSiteBundle:Security:register }
+
+
+login:
+    path:     /login
+    defaults: { _controller: AppSiteBundle:Security:login }
+
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout
+

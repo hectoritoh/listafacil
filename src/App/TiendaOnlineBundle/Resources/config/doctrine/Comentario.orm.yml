@@ -1,0 +1,51 @@
+App\TiendaOnlineBundle\Entity\Comentario:
+    type: entity
+    table: comentario
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        nombre:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+        correo:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+
+        descripcion:
+            type: text
+            fixed: false
+            nullable: true
+
+        rating:
+            type: integer
+            length: 1
+            fixed: true
+            nullable: true
+        borrado:
+            type: integer
+            length: 1
+            fixed: true
+            nullable: true
+        created:
+          type: datetime
+          gedmo:
+            timestampable:
+              on: create
+        updated:
+          type: datetime
+          gedmo:
+            timestampable:
+              on: update
+
+    lifecycleCallbacks:
+        prePersist: [preInsert]
+        preUpdate: [preUpdate]

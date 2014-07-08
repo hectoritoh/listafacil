@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Title and other stuffs -->
+  <title>Lista Facil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda online ">
+  <meta name="keywords" content="lista facil listafacil">
+  <meta name="author" content="halvarad@fiec.espol.edu.ec">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+  {% stylesheets 
+  'bundles/appsite/style/bootstrap.css' 
+  'bundles/appsite/style/prettyPhoto.css' 
+  'bundles/appsite/style/flexslider.css' 
+  'bundles/appsite/style/font-awesome.css' 
+  'bundles/appsite/style/sidebar-nav.css' 
+  'bundles/appsite/style/style.css' 
+  'bundles/appsite/style/red.css' 
+  'bundles/appsite/style/app.css' 
+  filter='cssrewrite' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %} 
+
+
+  
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shim.js"></script>
+  <![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon/favicon.png">
+</head>
+
+<body>
+
+  <div class="container-fluid" >
+  <div class="col-md-10 col-md-offset-1 ">
+    
+  
+   
+  <!-- Header starts -->
+    <header >
+      {% include 'AppSiteBundle:Default:header.html.twig'  %}
+    </header>
+    
+  <!-- Header ends -->
+  
+  
+  <!-- Cart, Login and Register form (Modal) -->
+
+<!-- Login modal ends -->
+
+<!-- Register Modal starts -->
+
+
+<!-- Register modal ends -->
+
+<!-- Navigation -->
+<div class="navbar bs-docs-nav" role="banner">
+
+ <div class="container-fluid">
+   <div class="navbar-header">
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+  </div>
+  <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+ 
+    {% block menu %}        
+      {{ render(controller('AppSiteBundle:Default:getMenu')) }}      
+    {% endblock %}
+ 
+  </nav>
+</div>
+</div>
+
+
+
+
+
+ 
+
+<!-- Flex Slider starts -->
+
+{% block slider %}
+    
+
+
+  {{ render(controller('AppSiteBundle:Default:getSlider')) }}
+
+
+
+{% endblock %}
+<!-- Flex slider ends -->
+
+<!-- Promo box starts -->
+
+{% block promociones %}
+
+  {% include 'AppSiteBundle:Default:promociones.html.twig' %}
+    
+{% endblock %}
+
+<!-- Promo box ends -->
+
+<!-- Items -->
+
+
+{% block contenido %}
+    
+    {% include 'AppSiteBundle:Default:productos.html.twig' %}
+
+{% endblock %}
+
+
+
+<!-- Recent items carousel starts -->
+
+
+{% block recents %}
+      
+  <div class="recent-posts">
+ 
+    {{ render(controller('AppSiteBundle:Default:getRecientes')) }}
+
+
+  </div>
+
+{% endblock %}
+
+<!-- Recent Posts ends -->
+
+<!-- Newsletter starts -->
+
+<div class="container newsletter">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="well">
+       <h5><i class="icon-envelope-alt"></i> Suscribete!!!</h5>
+       <p>Mantente al dia con las ultimas ofertas de Listafacil Ecuador , sucribete con tu mail </p>
+       <form class="form-inline" role="form">
+        <div class="form-group">
+          <input type="email" class="form-control" id="search" placeholder="Subscribe">
+        </div>
+        <button type="submit" class="btn btn-default">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Newsletter ends -->
+
+<!-- Footer starts -->
+<footer>
+{% include 'AppSiteBundle:Default:footer.html.twig'  %}
+</footer>   
+
+<!-- Footer ends -->
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
+
+
+
+
+
+{% javascripts 
+  '@AppSiteBundle/Resources/public/js/jquery.js' 
+  '@AppSiteBundle/Resources/public/js/bootstrap.js' 
+  '@AppSiteBundle/Resources/public/js/jquery.prettyPhoto.js' 
+  '@AppSiteBundle/Resources/public/js/filter.js' 
+  '@AppSiteBundle/Resources/public/js/jquery.flexslider-min.js' 
+  '@AppSiteBundle/Resources/public/js/jquery.carouFredSel-6.1.0-packed.js' 
+  '@AppSiteBundle/Resources/public/js/jquery.raty.js' 
+  '@AppSiteBundle/Resources/public/js/custom.js' 
+  %}
+  <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+
+
+
+{% block js_adicional %}
+    
+{% endblock %}
+
+
+    
+    </div>
+    </div>
+</body>
+
+<!-- Mirrored from responsivewebinc.com/premium/mackart/red/index.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 02 Apr 2014 19:55:44 GMT -->
+</html>

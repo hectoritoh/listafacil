@@ -1,0 +1,77 @@
+{% extends 'AppSiteBundle:Default:template.html.twig' %}
+
+
+{% block slider %}
+{% endblock %}
+
+
+{% block promociones %}
+{% endblock %}
+
+
+{% block contenido %}
+
+
+    <div class="items">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="title">Productos disponibles</h3>
+                </div>
+                <!-- Item #1 -->
+
+
+
+                {% for row in pagination | batch(4) %}
+
+
+                    <div class="row">
+
+
+                        {% for producto in row %}
+
+
+                            <div class="col-md-3 col-sm-4">
+                                <div class="item">
+                                    <!-- Item image -->
+                                    <div class="item-image">
+                                        <a href="{{  path('ver_producto' , { slug : producto.slug }) }}">     
+                                            <img src="{{ asset('uploads/productos/' ~ producto.imagen ) }}" class="img-responsive" alt="{{producto.nombre}}" />
+                                        </a>
+                                    </div>
+                                    <!-- Item details -->
+                                    <div class="item-details">
+                                        <!-- Name -->
+                                        <h5><a href="{{  path('ver_producto' , { slug : producto.slug }) }}">{{  producto.nombre }}</a></h5>
+                                        <!-- Para. Note more than 2 lines. -->
+                                        <p>{{ producto.descripcion  }}.</p>
+                                        <hr />
+                                        <!-- Price -->
+                                        <div class="item-price pull-left">${{producto.precio}}</div>
+                                        <!-- Add to cart -->
+                                        <div class="button pull-right"><a href="#">Agregar Carrito</a></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>                                                                      
+
+                        {% endfor %}
+                    </div>
+
+                {% endfor %}
+
+
+            </div>
+            <div class="row">
+                <div class="navigation">
+                    {{ knp_pagination_render(pagination) }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+ 

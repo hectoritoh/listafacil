@@ -1,0 +1,61 @@
+# Acme/DemoBundle/Resources/config/admin.yml
+services:
+    sonata.admin.contenido:
+        class: App\TiendaOnlineBundle\Admin\ContenidoAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "frontend", label: "Contenido" }
+        arguments:
+            - ~
+            - App\TiendaOnlineBundle\Entity\Contenido
+            - ~
+        calls:
+            - [ setTranslationDomain, [AppTiendaOnlineBundle]]
+
+
+    sonata.admin.categoria:
+        class: App\TiendaOnlineBundle\Admin\CategoriaAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "frontend", label: "Categorias" }
+        arguments:
+            - ~
+            - App\TiendaOnlineBundle\Entity\Categoria
+            - ~
+        calls:
+            - [ setTranslationDomain, [AppTiendaOnlineBundle]]
+
+    app_tienda_online.admin.banner:
+        class: App\TiendaOnlineBundle\Admin\BannerAdmin
+        arguments: [~, App\TiendaOnlineBundle\Entity\Banner, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: frontend, label: Banner}
+
+
+
+
+
+
+
+
+    app_tienda_online.admin.producto:
+        class: App\TiendaOnlineBundle\Admin\ProductoAdmin
+        arguments: [~, App\TiendaOnlineBundle\Entity\Producto, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Producto}
+
+    app_tienda_online.admin.institucion:
+        class: App\TiendaOnlineBundle\Admin\InstitucionAdmin
+        arguments: [~, App\TiendaOnlineBundle\Entity\Institucion, AppTiendaOnlineBundle:InstitucionAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Institucion}
+
+    app_tienda_online.admin.lista:
+        class: App\TiendaOnlineBundle\Admin\ListaAdmin
+        arguments: [~, App\TiendaOnlineBundle\Entity\Lista, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Lista}
+
+    app_tienda_online.admin.detalle_lista:
+        class: App\TiendaOnlineBundle\Admin\DetalleListaAdmin
+        arguments: [~, App\TiendaOnlineBundle\Entity\DetalleLista, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: DetalleLista}

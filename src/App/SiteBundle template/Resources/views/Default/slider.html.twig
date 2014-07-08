@@ -1,0 +1,46 @@
+
+<div class="flex-main">
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="flex-image flexslider">
+        <ul class="slides">
+          <!-- Each slide should be enclosed inside li tag. -->
+
+
+
+          {% for banner in banners %}
+
+
+          <!-- Slide #1 -->
+          <li>
+            <!-- Image -->            
+            <img src="{{ asset('uploads/banners/' ~ banner.url ) }}" alt="Example" />
+            <!-- Caption -->
+            {% if banner.descripcion %}
+            <div class="flex-caption">
+             <!-- Title -->
+             {% if banner.nombre %}
+             <h3>{{  banner.nombre }}</h3>
+             {% endif %}
+             <!-- Para -->
+             <p>{{  banner.descripcion }}</p>
+             <div class="button">
+              <a href="single-item.html">Ingresa ya</a>
+            </div>
+          </div>                  
+          {% endif %}
+
+        </li>
+
+        {% endfor %}
+
+
+
+
+      </ul>
+    </div>
+
+  </div>
+</div>
+</div>

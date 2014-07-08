@@ -1,0 +1,21 @@
+App\TiendaOnlineBundle\Entity\Usuario:
+    type:  entity
+    table: fos_user
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        nombres:
+            type: string
+            nullable: true 
+        apellidos:
+            type: string
+            nullable: true
+        sexo:
+            type: integer
+            nullable: true 
+

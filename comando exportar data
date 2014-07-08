@@ -1,0 +1,12 @@
+load data local infile 'data.csv'
+  into table producto
+  fields terminated by ';'
+  lines terminated by '\n'
+  (nombre,categoria_id,imagen,marca)
+  ;
+
+
+
+  update producto set imagen = LOWER( imagen )  where id not in (-1) ;
+  update producto set imagen = REPLACE( imagen , ' ' , '_')  where id not in (-1) ;
+  update producto set imagen = REPLACE( imagen , '-' , '_')  where id not in (-1) ;

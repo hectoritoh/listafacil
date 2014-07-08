@@ -1,0 +1,1137 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"App",
+				"AppSiteBundle"
+			],
+			[
+				"else",
+				"else	Twig : Else"
+			],
+			[
+				"mal",
+				"fortuner-maletero"
+			],
+			[
+				"fort",
+				"fortuner_iniciado"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"hide",
+				"hideAllModals"
+			],
+			[
+				"index",
+				"index_page"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"tiend",
+				"tiendaLike"
+			],
+			[
+				"sfr",
+				"sfrender	Symfony2 / Controller / Render"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"find",
+				"findOneBy"
+			],
+			[
+				"sf",
+				"sfrepo	Symfony2 / Controller / Get Repository"
+			],
+			[
+				"if",
+				"if	Twig : If"
+			],
+			[
+				"tie",
+				"tiene_tienda"
+			],
+			[
+				"tin",
+				"tiene_tienda"
+			],
+			[
+				"sfre",
+				"sfrepo	Symfony2 / Controller / Get Repository"
+			],
+			[
+				"cantidad",
+				"cantidad_producto"
+			],
+			[
+				"prod",
+				"productos"
+			],
+			[
+				"Art",
+				"ArtProducto"
+			],
+			[
+				"id_",
+				"id_tienda"
+			],
+			[
+				"Set",
+				"SetnetArtsenalBundle"
+			],
+			[
+				"get_re",
+				"get_real_ip"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"backgro",
+				"background-size"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"t",
+				"text-transform"
+			],
+			[
+				"pr",
+				"productos"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"fonti",
+				"font-family"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/App/TiendaOnlineBundle/Resources/config/doctrine/Comentario.orm.yml",
+			"settings":
+			{
+				"buffer_size": 1024,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 2416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/AppKernel.php",
+			"settings":
+			{
+				"buffer_size": 2096,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/config.yml",
+			"settings":
+			{
+				"buffer_size": 2780,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/App/SiteBundle/Controller/DefaultController.php",
+			"settings":
+			{
+				"buffer_size": 2010,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/celmedia/public_html/deleytoyota/index.php",
+			"settings":
+			{
+				"buffer_size": 19624,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"sstw",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"pacin",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssh",
+				"Set Syntax: HTML"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"sshtlm",
+				"Set Syntax: HTML"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"ss",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 557.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) ",
+			"ls",
+			"clear()",
+			"clear",
+			"cls",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation') "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/celmedia/public_html/listafacil/src/App/SiteBundle/Controller/SecurityController.php",
+		"/home/celmedia/public_html/listafacil/src/App/SiteBundle/Resources/views/Pages/login.html.twig",
+		"/home/celmedia/public_html/listafacil/src/App/TiendaOnlineBundle/Resources/config/admin.yml",
+		"/home/celmedia/public_html/listafacil/src/App/SiteBundle/Resources/views/Default/header.html.twig",
+		"/home/celmedia/public_html/listafacil/src/App/SiteBundle/Resources/config/routing.yml",
+		"/home/celmedia/public_html/listafacil/src/App/TiendaOnlineBundle/Resources/config/doctrine/Usuario.orm.yml",
+		"/home/celmedia/public_html/listafacil/src/App/TiendaOnlineBundle/Resources/config/doctrine/Comentario.orm.yml",
+		"/home/celmedia/public_html/listafacil/src/App/SiteBundle/Controller/DefaultController.php",
+		"/home/celmedia/public_html/listafacil/app/config/security.yml",
+		"/tmp/fz3temp-1/contactenos.htm",
+		"/tmp/fz3temp-1/index.htm",
+		"/tmp/fz3temp-1/noticias.htm",
+		"/tmp/fz3temp-1/asesoria.htm",
+		"/tmp/fz3temp-1/quienes.htm",
+		"/tmp/fz3temp-1/servicios.htm",
+		"/home/celmedia/public_html/listafacil/src/App/TiendaOnlineBundle/Resources/config/doctrine/Lista.orm.yml",
+		"/home/celmedia/public_html/listafacil/src/App/SiteBundle/Resources/views/Default/template.html.twig",
+		"/home/celmedia/public_html/deleytoyota/sftp-config.json",
+		"/home/celmedia/public_html/deleytoyota/index.php",
+		"/home/celmedia/public_html/deleytoyota/modals/introPrius.php",
+		"/home/celmedia/public_html/deleytoyota/modals/experienciaPriusC.php",
+		"/home/celmedia/public_html/deleytoyota/modals/lolograsteFortuner.php",
+		"/home/celmedia/public_html/deleytoyota/modals/faltopocoFortuner.php",
+		"/home/celmedia/public_html/deleytoyota/seccion/seccion-decidir.php",
+		"/home/celmedia/public_html/deleytoyota/modals/lolograsteRav4.php",
+		"/home/celmedia/public_html/deleytoyota/modals/introHilux.php",
+		"/home/celmedia/public_html/listafacil/sftp-config.json",
+		"/home/celmedia/public_html/listafacil/src/App/SiteBundle/Resources/views/Pages/ver.producto.html.twig",
+		"/home/celmedia/public_html/listafacil/src/App/SiteBundle/Resources/views/Default/footer.html.twig",
+		"/home/celmedia/public_html/listafacil/src/App/TiendaOnlineBundle/Admin/ContenidoAdmin.php",
+		"/home/celmedia/public_html/listafacil/src/App/TiendaOnlineBundle/Entity/DetalleLista.php",
+		"/home/celmedia/public_html/listafacil/src/App/TiendaOnlineBundle/Entity/Lista.php",
+		"/var/www/Artsenal/app/config/parameters.yml",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/config/routing.yml",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Templates/css.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Templates/js.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Entity/ArtCart.php",
+		"/tmp/fz3temp-1/prod.log",
+		"/tmp/fz3temp-1/routing.yml",
+		"/tmp/fz3temp-1/.htaccess",
+		"/tmp/fz3temp-1/dev.log",
+		"/tmp/fz3temp-1/parameters.yml",
+		"/home/celmedia/.config/tint2/tint2rc",
+		"/var/www/Artsenal/web/app.php",
+		"/var/www/Artsenal/app/AppKernel.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Entity/ArtProducto.php",
+		"/var/www/Artsenal/app/config/config.yml",
+		"/var/www/Artsenal/app/config/config_prod.yml",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/layout.sidebar.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Entity/ArtTienda.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/public/js/art-js.js",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Menu/menu.usuario.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Tienda/mi.tienda.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Tienda/ver.tienda.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/public/css/art-style.css",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Entity/ArtTiendaLike.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Controller/TiendaController.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/config/doctrine/ArtTiendaLike.orm.yml",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Tienda/crea.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Entity/ArtUsuario.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Controller/UsuarioController.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Controller/PerfilController.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Entity/ArtPerfil.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Tienda/crea.nombre.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Tienda/breadcumb.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Entity/ArtTiendaLike.php~",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Helper/CartHelper.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Controller/CartController.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Controller/DefaultController.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Menu/menu.default.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/layout.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Pages/checkout.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Cart/cart_total.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Entity/ArtCartItem.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/public/css/bootstrap.css",
+		"/var/www/Artsenal/web/css/bootstrap.css",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/public/css/bootstrap-responsive.css",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Controller/ProductoController.php",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/views/Pages/index.html.twig",
+		"/var/www/Artsenal/src/Setnet/ArtsenalBundle/Resources/public/js/art_vendedor_script.js",
+		"/home/celmedia/Escritorio/estilo",
+		"/var/www/prueba.php",
+		"/var/www/Artsenal/src/sftp-config.json",
+		"/home/celmedia/.config/sublime-text-3/Packages/SideBarEnhancements/CHANGELOG",
+		"/var/www/cn/lib/script.js",
+		"/var/www/cn/lib/reset.css",
+		"/var/www/cn/lib/style.css",
+		"/var/www/cn/index.php",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Default/tienda.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/top.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Ajax/productos.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Default/producto.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Template/descripcion_producto.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Default/index.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Default/trabajaNosotros.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Template/item_noticia_jm.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/config/routing.yml",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Controller/DefaultController.php",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/layout.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Default/about.html.twig",
+		"/var/www/JuanMarcet/app/config/parameters.yml",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Default/prensa.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/submenu.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Template/menu.twig",
+		"/var/www/JuanMarcet/web/css/bootstrap.css",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Default/contactenos.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Default/preguntas.html.twig",
+		"/var/www/JuanMarcet/web/css/site.css",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/footer.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Entity/TrabajaConNosotros.php",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Template/item_producto_jm.html.twig",
+		"/var/www/JuanMarcet/web/js/script.js",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Template/row_producto_re.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Default/subcategoria.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/portada.html.twig",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Entity/Subcategoria.php",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Entity/Producto.php",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Entity/Categoria.php",
+		"/var/www/JuanMarcet/src/Setnet/JuanMarcetBundle/Resources/views/Template/tienda.html.twig",
+		"/var/www/SumbawaWeb/src/Apps/SiteBundle/Controller/DefaultController.php",
+		"/var/www/SumbawaWeb/src/Apps/SiteBundle/Resources/views/Pages/team.html.twig",
+		"/var/www/SumbawaWeb/src/Apps/SiteBundle/Resources/views/Pages/index.html.twig",
+		"/var/www/SumbawaWeb/src/Apps/SiteBundle/Resources/views/layout.html.twig",
+		"/var/www/SumbawaWeb/src/Apps/SiteBundle/Controller/SiteController.php",
+		"/var/www/SumbawaWeb/src/Apps/SiteBundle/Resources/views/Menu/left.team.html.twig",
+		"/var/www/SumbawaWeb/src/Apps/SiteBundle/Resources/views/Menu/sub.html.twig",
+		"/var/www/SumbawaWeb/web/css/menu.css",
+		"/var/www/SumbawaWeb/src/Apps/SiteBundle/Resources/views/Pages/show_noticia.html.twig"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"restarMaletero",
+			"h: 2",
+			"h: 1",
+			"iniciarPagina",
+			"      \n",
+			"juego",
+			"Juego",
+			"margin",
+			"Votar",
+			"frontend",
+			"admin",
+			"asset_url",
+			"css",
+			"\"code\" => 100",
+			"temporal",
+			"ajax",
+			"usuario->getId()",
+			"tienda",
+			"productosSlider",
+			"$this->getDoctrine()",
+			"myCarousel",
+			"AcmeBarBundle",
+			"fondo_rojo_claro",
+			"F",
+			"SUB",
+			"subcategor",
+			"subcategora",
+			"descripcion",
+			"  ",
+			"subcategoria",
+			"submenu",
+			"url",
+			"submenu-h",
+			"50px",
+			"length",
+			"$categoria",
+			"categoria"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/App/TiendaOnlineBundle/Resources/config/doctrine/Comentario.orm.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1024,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								447,
+								447
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1101,
+								1101
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/AppKernel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1482,
+								1482
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/config/config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2780,
+								2780
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1170.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/App/SiteBundle/Controller/DefaultController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2010,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2006,
+								2006
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/celmedia/public_html/deleytoyota/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19624,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19178,
+								19178
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9229.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 512.0
+	},
+	"project": "listafacil.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"secu",
+				"app/config/security.yml"
+			],
+			[
+				"rou",
+				"src/App/SiteBundle/Resources/config/routing.yml"
+			],
+			[
+				"tema",
+				"src/App/SiteBundle/Resources/views/Default/template.html.twig"
+			],
+			[
+				"defa",
+				"src/App/SiteBundle/Controller/DefaultController.php"
+			],
+			[
+				"temp",
+				"SiteBundle/Resources/views/Default/template.html.twig"
+			],
+			[
+				"foote",
+				"SiteBundle/Resources/views/Default/footer.html.twig"
+			],
+			[
+				"contenid",
+				"TiendaOnlineBundle/Admin/ContenidoAdmin.php"
+			],
+			[
+				"rout",
+				"src/Setnet/ArtsenalBundle/Resources/config/routing.yml"
+			],
+			[
+				"css",
+				"src/Setnet/ArtsenalBundle/Resources/views/Templates/css.html.twig"
+			],
+			[
+				"js",
+				"src/Setnet/ArtsenalBundle/Resources/views/Templates/js.html.twig"
+			],
+			[
+				"ro",
+				"src/Setnet/ArtsenalBundle/Resources/config/routing.yml"
+			],
+			[
+				"artpro",
+				"src/Setnet/ArtsenalBundle/Entity/ArtProducto.php"
+			],
+			[
+				"artcart",
+				"src/Setnet/ArtsenalBundle/Entity/ArtCart.php"
+			],
+			[
+				"art-st",
+				"src/Setnet/ArtsenalBundle/Resources/public/css/art-style.css"
+			],
+			[
+				"arttienda",
+				"src/Setnet/ArtsenalBundle/Entity/ArtTienda.php"
+			],
+			[
+				"ver.tien",
+				"src/Setnet/ArtsenalBundle/Resources/views/Tienda/ver.tienda.html.twig"
+			],
+			[
+				"routin",
+				"src/Setnet/ArtsenalBundle/Resources/config/routing.yml"
+			],
+			[
+				"tiendacon",
+				"src/Setnet/ArtsenalBundle/Controller/TiendaController.php"
+			],
+			[
+				"tienda",
+				"src/Setnet/ArtsenalBundle/Controller/TiendaController.php"
+			],
+			[
+				"art-s",
+				"src/Setnet/ArtsenalBundle/Resources/public/css/art-style.css"
+			],
+			[
+				"ti",
+				"src/Setnet/ArtsenalBundle/Controller/TiendaController.php"
+			],
+			[
+				"usuario",
+				"src/Setnet/ArtsenalBundle/Controller/UsuarioController.php"
+			],
+			[
+				"layou",
+				"src/Setnet/ArtsenalBundle/Resources/views/layout.html.twig"
+			],
+			[
+				"usuar",
+				"src/Setnet/ArtsenalBundle/Controller/UsuarioController.php"
+			],
+			[
+				"defau",
+				"src/Setnet/ArtsenalBundle/Controller/DefaultController.php"
+			],
+			[
+				"carth",
+				"src/Setnet/ArtsenalBundle/Helper/CartHelper.php"
+			],
+			[
+				"artcar",
+				"src/Setnet/ArtsenalBundle/Entity/ArtCart.php"
+			],
+			[
+				"artca",
+				"src/Setnet/ArtsenalBundle/Entity/ArtCartItem.php"
+			],
+			[
+				"cartcon",
+				"src/Setnet/ArtsenalBundle/Controller/CartController.php"
+			],
+			[
+				"che",
+				"src/Setnet/ArtsenalBundle/Resources/views/Pages/checkout.html.twig"
+			],
+			[
+				"art_",
+				"src/Setnet/ArtsenalBundle/Resources/public/js/art_vendedor_script.js"
+			],
+			[
+				"cart",
+				"src/Setnet/ArtsenalBundle/Controller/CartController.php"
+			],
+			[
+				"artp",
+				"src/Setnet/ArtsenalBundle/Entity/ArtProducto.php"
+			],
+			[
+				"art",
+				"src/Setnet/ArtsenalBundle/Entity/ArtTienda.php"
+			],
+			[
+				"def",
+				"src/Setnet/ArtsenalBundle/Controller/DefaultController.php"
+			],
+			[
+				"csstemplate",
+				"src/Setnet/ArtsenalBundle/Resources/views/Templates/css.html.twig"
+			],
+			[
+				"sty",
+				"lib/style.css"
+			],
+			[
+				"res",
+				"lib/reset.css"
+			],
+			[
+				"control",
+				"JuanMarcetBundle/Controller/DefaultController.php"
+			],
+			[
+				"traba",
+				"JuanMarcetBundle/Resources/views/Default/trabajaNosotros.html.twig"
+			],
+			[
+				"notici",
+				"JuanMarcetBundle/Resources/views/Template/item_noticia_jm.html.twig"
+			],
+			[
+				"top",
+				"JuanMarcetBundle/Resources/views/top.html.twig"
+			],
+			[
+				"index",
+				"JuanMarcetBundle/Resources/views/Default/index.html.twig"
+			],
+			[
+				"productos",
+				"JuanMarcetBundle/Resources/views/Ajax/productos.html.twig"
+			],
+			[
+				"noticia",
+				"JuanMarcetBundle/Resources/views/Template/item_noticia_jm.html.twig"
+			],
+			[
+				"notic",
+				"JuanMarcetBundle/Resources/views/Template/item_noticia_jm.html.twig"
+			],
+			[
+				"noti",
+				"JuanMarcetBundle/Resources/views/Default/noticia.html.twig"
+			],
+			[
+				"tien",
+				"JuanMarcetBundle/Resources/views/Default/tienda.html.twig"
+			],
+			[
+				"about",
+				"JuanMarcetBundle/Resources/views/Default/about.html.twig"
+			],
+			[
+				"foo",
+				"JuanMarcetBundle/Resources/views/footer.html.twig"
+			],
+			[
+				"site",
+				"css/site.css"
+			],
+			[
+				"trabaja",
+				"JuanMarcetBundle/Resources/views/Default/trabajaNosotros.html.twig"
+			],
+			[
+				"trab",
+				"JuanMarcetBundle/Entity/TrabajaConNosotros.php"
+			],
+			[
+				"script",
+				"js/script.js"
+			],
+			[
+				"produc",
+				"JuanMarcetBundle/Resources/views/Default/producto.html.twig"
+			],
+			[
+				"lay",
+				"JuanMarcetBundle/Resources/views/layout.html.twig"
+			],
+			[
+				"ca",
+				"JuanMarcetBundle/Entity/Categoria.php"
+			],
+			[
+				"prod",
+				"JuanMarcetBundle/Entity/Producto.php"
+			],
+			[
+				"sub",
+				"JuanMarcetBundle/Entity/Subcategoria.php"
+			],
+			[
+				"produ",
+				"JuanMarcetBundle/Resources/views/Ajax/productos.html.twig"
+			],
+			[
+				"tour",
+				"JuanMarcetBundle/Resources/config/routing.yml"
+			],
+			[
+				"menu.css",
+				"css/menu.css"
+			],
+			[
+				"n",
+				"SiteAdminBundle/Entity/Noticias.php"
+			],
+			[
+				"person",
+				"SiteAdminBundle/Entity/Personal.php"
+			],
+			[
+				"banner",
+				"SiteAdminBundle/Entity/Banner.php"
+			],
+			[
+				"personal",
+				"SiteAdminBundle/Entity/Personal.php"
+			],
+			[
+				"routing",
+				"SiteBundle/Resources/config/routing.yml"
+			],
+			[
+				"default",
+				"SiteBundle/Controller/DefaultController.php"
+			],
+			[
+				"index.html",
+				"SiteBundle/Resources/views/Default/index.html.twig"
+			],
+			[
+				"layo",
+				"JuanMarcetBundle/Resources/views/layout.html.twig"
+			],
+			[
+				"layout.html.twig",
+				"JuanMarcetBundle/Resources/views/layout.html.twig"
+			],
+			[
+				"defaultr",
+				"JuanMarcetBundle/Controller/DefaultController.php"
+			],
+			[
+				"juan",
+				"css/juanmarcet.css"
+			],
+			[
+				"menu",
+				"css/menu.css"
+			],
+			[
+				"scrit",
+				"js/script.js"
+			],
+			[
+				"contenido",
+				"JuanMarcetBundle/Resources/config/doctrine/Contenido.orm.yml"
+			],
+			[
+				"pr",
+				"JuanMarcetBundle/Entity/Producto.php"
+			],
+			[
+				"",
+				"JuanMarcetBundle/Entity/Producto.php"
+			],
+			[
+				"imagene",
+				"JuanMarcetBundle/Entity/Imagenes.php"
+			],
+			[
+				"productio",
+				"JuanMarcetBundle/Resources/config/doctrine/ProductoImagen.orm.yml"
+			],
+			[
+				"productoim",
+				"JuanMarcetBundle/Entity/ProductoImagen.php"
+			],
+			[
+				"product",
+				"JuanMarcetBundle/Entity/Producto.php"
+			],
+			[
+				"productos.h",
+				"JuanMarcetBundle/Resources/views/Ajax/productos.html.twig"
+			],
+			[
+				"contr",
+				"JuanMarcetBundle/Controller/MenuController.php"
+			],
+			[
+				"subcate",
+				"src/Setnet/JuanMarcetBundle/Entity/Subcategoria.php"
+			],
+			[
+				"controller",
+				"src/Setnet/JuanMarcetBundle/Controller/MenuController.php"
+			],
+			[
+				"subca",
+				"src/Setnet/JuanMarcetBundle/Resources/config/doctrine/Subcategoria.orm.yml"
+			],
+			[
+				"producto.y",
+				"src/Setnet/JuanMarcetBundle/Resources/config/doctrine/Producto.orm.yml"
+			],
+			[
+				"param",
+				"app/config/parameters.yml"
+			],
+			[
+				"styl",
+				"lib/style.css"
+			],
+			[
+				"inde",
+				"index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 264.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

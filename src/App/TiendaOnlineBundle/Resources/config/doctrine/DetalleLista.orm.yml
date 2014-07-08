@@ -1,0 +1,45 @@
+App\TiendaOnlineBundle\Entity\DetalleLista:
+    type: entity
+    table: detalle_lista
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        nombre:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+        precio:
+            type: float
+            nullable: false
+        cantidad:
+            type: integer
+            fixed: true
+            nullable: false
+        created_at:
+            type: datetime
+            nullable: false
+        updated_at:
+            type: datetime
+            nullable: false
+
+
+
+    manyToOne:
+
+      lista:
+        targetEntity: Lista
+        inversedBy: detalles
+        joinColumn:
+          name: lista_id
+          referencedColumnName: id
+
+
+    lifecycleCallbacks:
+        prePersist: [preInsert]
+        preUpdate: [preUpdate]

@@ -1,0 +1,14 @@
+
+      <div class="slider">
+        <ul class="bxslider">
+
+      {% for banner in banners %}
+          <li>
+            <!-- Image -->            
+            <img src="{{ asset('uploads/banners/' ~ banner.url ) }}" alt="{{  banner.nombre }}" />
+            <!-- Caption -->
+        </li>
+      {% endfor %}
+
+        </ul>
+      </div>

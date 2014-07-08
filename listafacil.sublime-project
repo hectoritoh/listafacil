@@ -1,0 +1,38 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				".gitignore",
+				".travis.yml",
+				"LICENSE",
+				"README.md",
+				"UPGRADE-2.2.md",
+				"UPGRADE-2.3.md",
+				"UPGRADE-2.4.md",
+				"UPGRADE.md",
+				"app/.htaccess",
+				"app/AppCache.php",
+				"app/SymfonyRequirements.php",
+				"app/autoload.php",
+				"app/bootstrap.php.cache",
+				"app/check.php",
+				"app/console",
+				"app/phpunit.xml.dist"
+			],
+			"folder_exclude_patterns":
+			[
+				"vendor",
+				"bin",
+				"nbproject",
+				"web",
+				"app/Resources",
+				"app/cache",
+				"app/logs"
+			],
+			"follow_symlinks": true,
+			"path": "/home/celmedia/public_html/listafacil"
+		}
+	]
+}

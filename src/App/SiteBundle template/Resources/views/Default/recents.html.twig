@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="bor"></div>
+      <h4 class="title">Ultimos Productos</h4>
+      <div class="carousel_nav pull-right">
+        <!-- Navigation -->
+        <a class="prev" id="car_prev" href="#"><i class="icon-chevron-left"></i></a>
+        <a class="next" id="car_next" href="#"><i class="icon-chevron-right"></i></a>
+      </div>
+      <div class="clearfix"></div>
+      <ul class="rps-carousel">
+        <!-- Recent items #1 -->
+        <!-- Each item should be enclosed inside "li"  tag. -->
+
+
+
+        {% for producto in recientes %}
+        
+        <li>
+          <div class="rp-item"> 
+            <div class="rp-image">    
+              <!-- Image -->    
+              <a href="single-item.html">   
+                <img src="{{ asset('uploads/productos/' ~ producto.imagen ) }}" alt="Example" />
+              </a>
+            </div>
+            <div class="rp-details">
+              <!-- Title and para -->
+              <h5><a href="single-item.html">{{  producto.nombre }} <span class="price pull-right">${{  producto.precio }}</span></a></h5>
+              <div class="clearfix"></div>
+              <!-- Description -->
+              <p>{{  producto.descripcion }}</p>         
+            </div>                
+          </div>        
+        </li>
+        
+        {% endfor %}
+
+
+
+
+      </ul>
+    </div>
+  </div>
+</div>

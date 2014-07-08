@@ -1,0 +1,91 @@
+App\TiendaOnlineBundle\Entity\Producto:
+    type: entity
+    table: producto
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        nombre:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+        marca:
+            type: string
+            length: 200
+            fixed: false
+            nullable: true
+        cantidad:
+            type: integer
+            nullable: false
+        precio:
+            type: float
+            nullable: false
+        descripcion:
+            type: text
+            fixed: false
+            nullable: true
+        imagen:
+            type: text
+            nullable: false
+        borrado:
+            type: integer
+            length: 1
+            fixed: true
+            nullable: true
+        created:
+          type: datetime
+          gedmo:
+            timestampable:
+              on: create
+        updated:
+          type: datetime
+          gedmo:
+            timestampable:
+              on: update
+        slug:
+          type: string
+          length: 128
+          gedmo:
+            slug:
+              separator: _
+              style: camel
+              fields:
+                - id
+                - nombre
+                - marca
+
+    indexes:
+      search_idx:
+        columns: slug
+
+    manyToOne:
+      categoria:
+        targetEntity: Categoria
+        inversedBy: productos
+        joinColumn:
+          name: categoria_id
+          referencedColumnName: id
+
+
+    manyToMany:
+      comentarios:
+        targetEntity: Comentario
+        joinTable:
+          name: producto_comentario
+          joinColumns:
+            producto_id:
+              referencedColumnName: id
+          inverseJoinColumns:
+            comentario_id:
+              referencedColumnName: id
+              unique: true
+
+
+    lifecycleCallbacks:
+        prePersist: [preInsert]
+        preUpdate: [preUpdate]

@@ -1,0 +1,7 @@
+parameters:
+#    app_tienda_online.example.class: App\TiendaOnlineBundle\Example
+
+services:
+#    app_tienda_online.example:
+#        class: %app_tienda_online.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

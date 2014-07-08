@@ -1,0 +1,12 @@
+ <div class="no-padding">
+  <span class="title">CATEGORIAS </span>
+</div>
+
+
+<div class="list-group list-categ">
+  {% for categoria in categorias %}
+
+    <a  href="{{  path('ver_categoria', { slug : categoria.slug }) }}"   
+    class="list-group-item   {% if app.request.get('slug') == categoria.slug  %}  selected {% endif %}  ">{{  categoria.nombre }}</a>  
+  {% endfor %}
+</div>
