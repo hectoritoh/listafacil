@@ -224,4 +224,11 @@ class Institucion
     {
         // Add your code here
     }
+
+
+    public function __toString(){
+        return "" . $this->nombre;
+    }
+
+
 }
