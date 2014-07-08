@@ -1,15 +1,15 @@
 {% extends 'AppSiteBundle:Default:template.html.twig' %}
 
+ 
 
 
 
+{% block titulo_contenido %}
+<span class="title">HOME /  {{ producto.categoria.nombre }} / {{ producto.nombre }}</span>    
 
-{% block slider %}
-{% endblock %}
+ 
+{% endblock %}        
 
-
-{% block promociones %}
-{% endblock %}
 
 
 {% block contenido %}
@@ -20,57 +20,12 @@
   <div class="container">
     <div class="row">
 
-      <!-- Sidebar -->
-      <div class="col-md-4 col-sm-4 hidden-xs">
-
-        <h5 class="title">Categorias</h5>
-        <!-- Sidebar navigation -->
-        <nav>
-          <ul id="nav">
-            <!-- Main menu. Use the class "has_sub" to "li" tag if it has submenu. -->
-         
-
-          {% for categoria in categorias %}    
-               <li class="has_sub categoria_list"    {% if loop.index > 5 %}      style="display:none;"  {% endif %} >
-                  <a href="{{  path('ver_categoria', { id_categoria : categoria.id }) }}">{{ categoria.nombre }}</a>
-               </li>
-          {% endfor %}
- 
-<!--             <li class="has_sub"><a href="#">Tablet</a>
-              <ul>
-                <li><a href="items.html">Samsung</a></li>
-                <li><a href="items.html">Apple</a></li>
-                <li><a href="items.html">Motorola</a></li>
-              </ul>
-            </li>
- -->
-           
-          </ul>
-          <a href="#"  onclick="$('.categoria_list').show('fast')" >  Ver mas categorias </a>
-        </nav>
-        <br />
-        <!-- Sidebar items (featured items)-->
-
-        <!-- AQUI VAN LOS PRODUCTOS PROMOCIONADOS
-        productos.promocionados.html.twig
- -->
-        <!-- Sidebar items (featured items)-->
-
-      
-
-      </div>
-
+       
       <!-- Main content -->
 
       <div class="col-md-8 col-sm-8">
 
-        <!-- Breadcrumbs -->
-        <ul class="breadcrumb">
-          <li><a href="index.html">Home</a> <span class="divider">/</span></li>
-          <li><a href="items.html">{{ producto.categoria.nombre }}</a> <span class="divider">/</span></li>
-          <li class="active">{{ producto.nombre }}</li>
-        </ul>
-
+    
         <!-- Product details -->
 
         <div class="product-main">
@@ -193,7 +148,6 @@
 
         <div class="form form-small">
 
-        {%  render(controller("AppSiteBundle:Default:comentar")) %}
 
 
       </div> 
@@ -209,36 +163,16 @@
 </div>
 </div>
 </div>
-
-<!-- Recent items carousel starts -->
-
-
-
-
-
-
-
+ 
 
 
 {% endblock %}
 
 
 
-{% block js_adicional %}
-    
-
-    <script type="text/javascript">
-
-    $(document).ready(  function(){
-
-        $(".rating").raty({
-          starOff:"/listafacil/web/bundles/appsite/img/star-off.png",
-          starOn:"/listafacil/web/bundles/appsite/img/star-on.png"
-        });
-
-    } );
-
-    </script>
 
 
-{% endblock %}
+
+
+
+

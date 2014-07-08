@@ -8,12 +8,12 @@
 
 <div class="col-lg-4 col-sm-4 hero-feature text-center">
   <div class="thumbnail">
-    <a href="detail.html" class="link-p">
+    <a href="{{  path('ver_producto' , {slug : producto.slug}) }}" class="link-p">
 
      <img src="{{ asset('uploads/productos/' ~ producto.imagen ) }}" class="img-responsive" alt="{{producto.nombre}}" />
    </a>
    <div class="caption prod-caption">
-    <h4><a href="detail.html">{{  producto.nombre }}</a></h4>
+    <h4><a href="{{  path('ver_producto' , {slug : producto.slug}) }}">{{  producto.nombre }}</a></h4>
     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p> -->
     <p>
     <div class="btn-group"  style="width:100%;" >
