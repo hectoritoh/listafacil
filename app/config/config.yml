@@ -1,5 +1,7 @@
 imports:
     - { resource: parameters.yml }
+    - { resource: sonata_classification.yml }
+    - { resource: sonata_news.yml }
     - { resource: security.yml }
     - { resource: @AppTiendaOnlineBundle/Resources/config/admin.yml }
 
@@ -16,7 +18,7 @@ framework:
     templating:
         engines: ['twig']
         #assets_version: SomeVersionScheme
-    default_locale:  "es"
+    default_locale:  "en"
     trusted_hosts:   ~
     trusted_proxies: ~
     session:
@@ -57,9 +59,36 @@ doctrine:
         # e.g. database_path: "%kernel.root_dir%/data/data.db3"
         # path:     "%database_path%"
 
+        types:
+            json: Sonata\Doctrine\Types\JsonType
+    # orm:
+    #     auto_generate_proxy_classes: "%kernel.debug%"
+    #     auto_mapping: true
+
     orm:
-        auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
+        entity_managers:
+            default:
+                mappings:
+                    ApplicationSonataUserBundle: ~
+                    ApplicationSonataMediaBundle: ~
+                    SonataUserBundle: ~
+                    FOSUserBundle: ~      
+                    AppTiendaOnlineBundle: ~      
+                    SonataMediaBundle: ~
+                    ApplicationSonataNewsBundle: ~
+                    SonataNewsBundle: ~
+                    SonataClassificationBundle: ~
+
+
+        # entity_managers:
+        #     default:
+        #         mappings:
+        #             SonataMediaBundle: ~
+
+
+
+
+
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -77,14 +106,39 @@ sonata_block:
         sonata.admin.block.admin_list:
             contexts:   [admin]
         # Your other blocks
-        sonata.block.service.text:
         sonata.block.service.rss:
+        sonata.user.block.menu:    # used to display the menu in profile pages
+        sonata.user.block.account: # used to display menu option (login option)
+        sonata.block.service.text: # used to if you plan to use Sonata user routes
 
 
 fos_user:
-    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
-    firewall_name: main
-    user_class: App\TiendaOnlineBundle\Entity\Usuario
+    db_driver:      orm # can be orm or odm
+    firewall_name:  main
+    user_class:     Application\Sonata\UserBundle\Entity\User
+
+
+    group:
+        group_class:   Application\Sonata\UserBundle\Entity\Group
+        group_manager: sonata.user.orm.group_manager                    # If you're using doctrine orm (use sonata.user.mongodb.user_manager for mongodb)
+
+    service:
+        user_manager: sonata.user.orm.user_manager                      # If you're using doctrine orm (use sonata.user.mongodb.group_manager for mongodb)
+
+
+# fos_user:
+#     db_driver:      orm # can be orm or odm
+#     firewall_name:  main
+#     user_class:     Sonata\UserBundle\Entity\BaseUser
+
+
+#     group:
+#         group_class:   Sonata\UserBundle\Entity\BaseGroup
+#         group_manager: sonata.user.orm.group_manager                    # If you're using doctrine orm (use sonata.user.mongodb.user_manager for mongodb)
+
+#     service:
+#         user_manager: sonata.user.orm.user_manager                      # If you're using doctrine orm (use sonata.user.mongodb.group_manager for mongodb)
+
 
 
 
@@ -106,40 +160,44 @@ stof_doctrine_extensions:
             sluggable : true 
 
 
-sonata_formatter:
-    formatters:
-        markdown:
-            service: sonata.formatter.text.markdown
-            extensions:
-                - sonata.formatter.twig.control_flow
-                - sonata.formatter.twig.gist
-        #        - sonata.media.formatter.twig #keep this commented unless you are using media bundle.
+sonata_user:
+    security_acl: true
+    manager_type: orm # can be orm or mongodb
 
 
-        text:
-            service: sonata.formatter.text.text
-            extensions:
-                - sonata.formatter.twig.control_flow
-                - sonata.formatter.twig.gist
-        #        - sonata.media.formatter.twig
 
 
-        rawhtml:
-            service: sonata.formatter.text.raw
-            extensions:
-                - sonata.formatter.twig.control_flow
-                - sonata.formatter.twig.gist
-        #        - sonata.media.formatter.twig
 
 
-        richhtml:
-            service: sonata.formatter.text.raw
-            extensions:
-                - sonata.formatter.twig.control_flow
-                - sonata.formatter.twig.gist
-        #        - sonata.media.formatter.twig
+sonata_media:
+    # if you don't use default namespace configuration
+    #class:
+    #    media: MyVendor\MediaBundle\Entity\Media
+    #    gallery: MyVendor\MediaBundle\Entity\Gallery
+    #    gallery_has_media: MyVendor\MediaBundle\Entity\GalleryHasMedia
+    default_context: default
+    db_driver: doctrine_orm # or doctrine_mongodb, doctrine_phpcr
+    contexts:
+        default:  # the default context is mandatory
+            providers:
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+
+            formats:
+                small: { width: 100 , quality: 70}
+                big:   { width: 500 , quality: 70}
+
+    cdn:
+        server:
+            path: http://localhost/listafacil/web/uploads/media # http://media.sonata-project.org/
+
+    filesystem:
+        local:
+            directory:  %kernel.root_dir%/../web/uploads/media
+            create:     false
 
 
-        twig:
-            service: sonata.formatter.text.twigengine
-            extensions: [] # Twig formatter cannot have extensions
+
+ 

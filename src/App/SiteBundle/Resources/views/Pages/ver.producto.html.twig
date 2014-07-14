@@ -1,169 +1,69 @@
 {% extends 'AppSiteBundle:Default:template.html.twig' %}
 
- 
+
 
 
 
 {% block titulo_contenido %}
 <span class="title">HOME /  {{ producto.categoria.nombre }} / {{ producto.nombre }}</span>    
 
- 
+
 {% endblock %}        
 
 
 
 {% block contenido %}
 
-<!-- Items -->
-
-<div class="items">
-  <div class="container">
-    <div class="row">
-
-       
-      <!-- Main content -->
-
-      <div class="col-md-8 col-sm-8">
-
-    
-        <!-- Product details -->
-
-        <div class="product-main">
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-
-              <!-- Image. Flex slider -->
-              <div class="product-slider">
-                <div class="product-image-slider flexslider">
-                  <ul class="slides">
-                    <!-- Each slide should be enclosed inside li tag. -->
-
-                    <!-- Slide #1 -->
-                    <li>
-                      <img src="{{  asset('uploads/productos/'  ~ producto.imagen ) }}" alt="{{  producto.descripcion }}"/>
-                    </li>
 
 
 
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <!-- Title -->
-              <h4 class="title">{{  producto.nombre }}</h4>
-              <h5>Precio : ${{  producto.precio }}</h5>
-              <p>Disponibilidad : En stock</p>
-              <!-- Dropdown menu -->
-              <div class="form-group">                               
-                <select class="form-control">
-                  <option>Color</option>
-                  <option>Black</option>
-                  <option>White</option>
-                  <option>Grey</option>
-                </select>  
-              </div>
-
-              <!-- Quantity and add to cart button -->
-
-              <div class="row">
-               <div class="col-md-6">
-                <div class="input-group">
-                  <input type="text" class="form-control input-sm" value="2">
-                  <span class="input-group-btn">
-                   <button class="btn btn-default btn-sm" type="button">Add to Cart</button>
-                 </span>								  
-               </div>
-             </div>
-           </div>
-
-           <!-- Add to wish list -->
-           <a href="wish-list.html">+ Agregar a wish list</a>
 
 
-         </div>
-       </div>
-     </div>
-
-     <br />
-
-     <!-- Description, specs and review -->
-
-     <ul class="nav nav-tabs">
-      <!-- Use uniqe name for "href" in below anchor tags -->
-      <li class="active"><a href="#tab1" data-toggle="tab">Description</a></li>
-      <li><a href="#tab2" data-toggle="tab">Especificaciones</a></li>
-      <li><a href="#tab3" data-toggle="tab">Comentarios(0)</a></li>
-    </ul>
-
-    <!-- Tab Content -->
-    <div class="tab-content">
-      <!-- Description -->
-      <div class="tab-pane active" id="tab1">
-        <h5>{{  producto.nombre }}</h5>
-        <p>{{  producto.descripcion }}</p>
-  <!--       <h6>Caracteristicas</h6>
-        <ul>
-          <li>Etiam adipiscing posuere justo, nec iaculis justo dictum non</li>
-          <li>Cras tincidunt mi non arcu hendrerit eleifend</li>
-          <li>Aenean ullamcorper justo tincidunt justo aliquet et lobortis diam faucibus</li>
-          <li>Maecenas hendrerit neque id ante dictum mattis</li>
-          <li>Vivamus non neque lacus, et cursus tortor</li>
-        </ul> -->
-      </div>
-
-      <!-- Sepcs -->
-      <div class="tab-pane" id="tab2">
-
-        <h5 class="title">Especificaciones de productos</h5>
-        <table class="table table-striped tcart">
-          <tbody>
-            <tr>
-              <td><strong>Caracteristica</strong></td>
-              <td>valor caracteristica</td>
-            </tr>
-            <tr>
-              <td><strong>Caracteristica</strong></td>
-              <td>valor caracteristica</td>
-            </tr>
-
-                                                                                                        
-          </tbody>
-        </table>
-
-      </div>
-
-      <!-- Review -->
-      <div class="tab-pane" id="tab3">
-        <h5>Comentarios</h5>
-        <div class="item-review">
-          <h5>Ravi Kumar - <span class="color">4/5</span></h5>
-          <p class="rmeta">27/1/2012</p>
-          <p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit. Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
-        </div>
-
-        <hr />
-        <h5 class="title">Escribe un comentario</h5>
-
-        <div class="form form-small">
+<div class="col-lg-9 col-md-9 col-sm-12">
+  <div class="col-lg-12 col-sm-12">
+    <span class="title">{{  producto.nombre }}</span>
+  </div>
+  <div class="col-lg-12 col-sm-12 hero-feature">
+    <div class="sp-wrap">
 
 
 
-      </div> 
+      <a src="{{  asset('uploads/productos/'  ~ producto.imagen ) }}" >
+        <img src="{{  asset('uploads/productos/'  ~ producto.imagen ) }}" alt="">\
+      </a>
+
 
     </div>
-
+    <h4>{{  producto.nombre }}</h4>
+    <!-- 98 items in stock -->
+    <hr/>
+    {{  producto.descripcion }}
+    <hr/>
+    <!-- <h3>$428.96</h3> -->`
+    <div class="input-qty-detail">
+      <input type="text" class="form-control input-qty text-center" value="1">
+      <button class="btn btn-primary pull-left">add to cart</button>
+    </div>
+    <br/>
+    <hr/>
+    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+      <a class="addthis_button_preferred_1"></a>
+      <a class="addthis_button_preferred_2"></a>
+      <a class="addthis_button_preferred_3"></a>
+      <a class="addthis_button_preferred_4"></a>
+      <a class="addthis_button_compact"></a>
+    </div>
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-4f0c254f1302adf8"></script>
   </div>
-
-</div>                                                                    
-
-
-
+  <div class="clearfix"></div>
 </div>
-</div>
-</div>
- 
+
+
+
+
+
+
+
 
 
 {% endblock %}

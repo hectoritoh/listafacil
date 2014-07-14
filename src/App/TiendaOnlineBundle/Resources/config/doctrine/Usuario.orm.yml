@@ -19,3 +19,14 @@ App\TiendaOnlineBundle\Entity\Usuario:
             type: integer
             nullable: true 
 
+    manyToMany:
+        groups:
+            targetEntity: Grupo
+            joinTable:
+                name: fos_usuario_group
+                joinColumns:
+                    user_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    group_id:
+                        referencedColumnName: id

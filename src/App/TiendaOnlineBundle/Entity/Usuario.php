@@ -3,14 +3,15 @@
 namespace App\TiendaOnlineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
 use FOS\UserBundle\Model\User as BaseUser;
+use FOS\UserBundle\Model\GroupableInterface;
 
 /**
  * Usuario
  */
 class Usuario extends BaseUser
 {
+    
     /**
      * @var integer
      */
@@ -31,6 +32,18 @@ class Usuario extends BaseUser
      */
     private $sexo;
 
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    protected $groups;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->groups = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -110,4 +123,6 @@ class Usuario extends BaseUser
     {
         return $this->sexo;
     }
+
+
 }
